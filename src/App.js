@@ -13,9 +13,9 @@ function App(){
   return(
     <Router>
     
-      
+    <div className="container">
       <Navbar />
-      <div class="container">
+      
       <br/>
       <Routes>
           <Route path="/" element={<ExercisesList />} />
@@ -23,7 +23,7 @@ function App(){
           <Route path="/create" element={<CreateExercise />} />
           <Route path="/user" element={<CreateUser />} />
         </Routes>
-      </div>
+        </div>
     </Router>
   );
 }
